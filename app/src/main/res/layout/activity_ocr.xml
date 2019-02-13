@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#2c2c32">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+
+        android:background="#2c2c32"
+        android:src="@drawable/test_image" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:background="#9cd72e"
+        android:onClick="runOCR"
+        android:text="Evaluate" />
+
+    <TextView
+        android:id="@+id/tv_OCR_Result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:background="#2c2c32"
+        android:textColor="@android:color/holo_green_light" />
+</RelativeLayout>
